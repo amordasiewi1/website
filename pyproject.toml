@@ -1,0 +1,16 @@
+[project]
+name = "website"
+version = "0.1.0"
+description = "alessandromordasiewicz.com"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+sync-resume = "scripts.sync_resume:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["scripts"]

@@ -1,0 +1,255 @@
+{
+    "name": "Alessandro Mordasiewicz",
+    "contacts": {
+        "phone": "312-608-0070",
+        "email": "amordasiewi1@gmail.com",
+        "links": [
+            {
+                "label": "website",
+                "url": "https://alessandromordasiewicz.com/",
+                "display": "alessandromordasiewicz.com"
+            },
+            {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/alessandro-mordasiewicz/",
+                "display": "linkedin.com/in/alessandro-mordasiewicz"
+            }
+        ]
+    },
+    "citizenship": "U.S. Citizen",
+    "sections": [
+        {
+            "title": "Education",
+            "entries": [
+                {
+                    "kind": "education",
+                    "institution": "Purdue University",
+                    "location": "West Lafayette, IN",
+                    "degrees": [
+                        {
+                            "degree": "M.S. Aeronautics and Astronautics",
+                            "dates": {
+                                "start": "2027-01-01T00:00:00",
+                                "present": true
+                            },
+                            "gpa": "4.0/4.0",
+                            "concentrations": [
+                                "Astrodynamics"
+                            ],
+                            "minors": [
+                                "Autonomy & Control"
+                            ]
+                        },
+                        {
+                            "degree": "B.S. Aeronautical and Astronautical Engineering",
+                            "dates": {
+                                "start": "2022-08-01T00:00:00",
+                                "end": "2026-05-01T00:00:00",
+                                "present": false
+                            },
+                            "gpa": "3.4/4.0",
+                            "concentrations": [
+                                "Astrodynamics"
+                            ],
+                            "minors": [
+                                "Computer Science"
+                            ]
+                        }
+                    ],
+                    "coursework": [
+                        "Orbit Mechanics",
+                        "Space Traffic Management",
+                        "Spacecraft Attitude Dynamics",
+                        "Applied Control in Astronautics",
+                        "Applied Stochastic Processes",
+                        "Control System Analysis",
+                        "Geometric Control Methods"
+                    ],
+                    "interests": [
+                        "Spacecraft & launch vehicle GNC",
+                        "astrodynamics",
+                        "mission analysis/design",
+                        "modeling & simulation",
+                        "software engineering"
+                    ],
+                    "bullets": []
+                }
+            ]
+        },
+        {
+            "title": "Professional Experience",
+            "entries": [
+                {
+                    "kind": "experience",
+                    "title": "GNC Intern, Mission Design",
+                    "organization": "Relativity Space",
+                    "location": "Long Beach, CA",
+                    "dates": {
+                        "start": "2026-05-01T00:00:00",
+                        "end": "2026-11-01T00:00:00",
+                        "present": false
+                    },
+                    "bullets": [
+                        "Supported the Mission Design group in launch vehicle trajectory optimization productionization and day-of-launch tooling development for the Terran R medium-to-heavy-lift partially reusable launch vehicle.",
+                        "Responsible for the creation of launch window generation and evaluation tooling (Python).",
+                        "Enhanced robustness of second-stage guidance algorithm for inertial orbit targeting (Rust).",
+                        "Conducted preliminary launch vehicle collision avoidance and payload separation analyses (Python).",
+                        "Worked in conjunction with the Simulation team for several extensive 6DoF simulation improvements (C++/Python).",
+                        "Extensively used Git (via GitLab) for version control."
+                    ]
+                },
+                {
+                    "kind": "experience",
+                    "title": "Flight Mechanics Intern",
+                    "organization": "NASA - Marshall Space Flight Center",
+                    "location": "Huntsville, AL",
+                    "dates": {
+                        "start": "2025-05-01T00:00:00",
+                        "end": "2025-08-01T00:00:00",
+                        "present": false
+                    },
+                    "bullets": [
+                        "Supported the NASA HLS guidance, navigation, & mission analysis group (EV42) under the ESSCA contract.",
+                        "Developed Python/MATLAB tools to enhance lunar DEM fidelity for hazard injection and lander tip-over analysis.",
+                        "Integrated enhanced lunar DEMs into a 6DoF landing dynamics simulation.",
+                        "Verified and validated HLS landing dynamics simulations by reconstructing the Apollo 11 landing.",
+                        "Developed a Python landing visualization tool, reducing generation time from 2 hours to 2-3 minutes.",
+                        "Extensively used Git (via GitHub) for version control."
+                    ]
+                },
+                {
+                    "kind": "experience",
+                    "title": "Flight Dynamics Intern",
+                    "organization": "Intelsat (now SES Satellites)",
+                    "location": "McLean, VA",
+                    "dates": {
+                        "start": "2024-05-01T00:00:00",
+                        "end": "2024-08-01T00:00:00",
+                        "present": false
+                    },
+                    "bullets": [
+                        "Supported daily Flight Dynamics operations of over 70 active GEO satellites.",
+                        "Developed and maintained an interactive web application (Python, React) to analyze critical satellite parameters.",
+                        "Developed Python scripts for data visualization in operational flight dynamics software migrating to Linux.",
+                        "Evaluated a GPS-based position estimation method against existing state estimation systems for GEO satellites.",
+                        "Gained experience with Git for version control, enabling efficient collaboration and code management."
+                    ]
+                },
+                {
+                    "kind": "experience",
+                    "title": "Aerospace Engineering Intern",
+                    "organization": "Axiom Aerospace LLC",
+                    "location": "Chicago, IL",
+                    "dates": {
+                        "start": "2023-05-01T00:00:00",
+                        "end": "2023-08-01T00:00:00",
+                        "present": false
+                    },
+                    "bullets": [
+                        "Compiled FAA certification packages including comprehensive engineering reports, design drawings, and test & computations for Parts Manufacturer Approval (PMA) on FAA Part 23, 25, 27, and 29 category aircraft.",
+                        "Created and edited engineering drawings using SolidWorks and Adobe Acrobat for various aircraft parts."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Extracurriculars",
+            "entries": [
+                {
+                    "kind": "experience",
+                    "title": "Undergraduate Teaching Assistant",
+                    "organization": "Purdue University Department of Physics and Astronomy",
+                    "location": "West Lafayette, IN",
+                    "dates": {
+                        "start": "2023-08-01T00:00:00",
+                        "end": "2026-05-01T00:00:00",
+                        "present": false
+                    },
+                    "bullets": [
+                        "TA for PHYS 172: Modern Mechanics, the introductory physics course for first-year engineering students.",
+                        "Facilitated lab sections of up to 54 students, assisting students in understanding basic physics concepts and programming in Python."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Publications",
+            "entries": [
+                {
+                    "kind": "publication",
+                    "title": "Apollo 11 Lunar Module Touchdown Dynamics Reconstruction Verification and Validation for Human Landing Systems",
+                    "authors": [
+                        {
+                            "name": "R. M. Ali",
+                            "highlight": false
+                        },
+                        {
+                            "name": "A. C. Slagle",
+                            "highlight": false
+                        },
+                        {
+                            "name": "A. Mordasiewicz",
+                            "highlight": true
+                        },
+                        {
+                            "name": "J. Orphee",
+                            "highlight": false
+                        },
+                        {
+                            "name": "P. J. McDonough",
+                            "highlight": false
+                        }
+                    ],
+                    "venue": "48th Annual AAS Guidance, Navigation and Control (GN&C) Conference",
+                    "year": 2026,
+                    "location": "Breckenridge, CO",
+                    "url": "https://ntrs.nasa.gov/citations/20260000331",
+                    "identifier": "NASA Technical Reports Server, Doc. ID 20260000331"
+                }
+            ]
+        },
+        {
+            "title": "Technical Skills",
+            "entries": [
+                {
+                    "kind": "skills",
+                    "groups": [
+                        {
+                            "name": "Programming",
+                            "skills": [
+                                "Python",
+                                "C/C++",
+                                "Rust",
+                                "Julia",
+                                "MATLAB",
+                                "Java",
+                                "JavaScript",
+                                "TypeScript (React)",
+                                "HTML/CSS",
+                                "Bash",
+                                "Git",
+                                "R"
+                            ]
+                        },
+                        {
+                            "name": "Other",
+                            "skills": [
+                                "Simulink",
+                                "GMAT",
+                                "FreeFlyer",
+                                "STK",
+                                "Azure DevOps",
+                                "GitHub",
+                                "GitLab",
+                                "Microsoft Office",
+                                "Jira",
+                                "SolidWorks",
+                                "Siemens NX"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

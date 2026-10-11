@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alessandro Mordasiewicz — Resume</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: #222;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.45;
+    }
+    main {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    header { text-align: center; }
+    h1 { margin: 0 0 .4rem; }
+    h2 {
+      font-size: 1.2rem;
+      border-bottom: 1px solid currentColor;
+      margin: 1.5rem 0 .75rem;
+    }
+    h3 { font-size: 1rem; margin: 0; }
+    p { margin: .25rem 0; }
+    article { margin-bottom: 1rem; }
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .25rem 1rem;
+    }
+    a {
+      color: inherit;
+      text-underline-offset: .2em;
+      overflow-wrap: anywhere;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: baseline;
+      gap: .25rem 1rem;
+    }
+    .right { text-align: right; }
+    .degree-details { padding-left: 1.25em; }
+    ul { margin: .4rem 0; padding-left: 1.5rem; }
+    @media (max-width: 600px) {
+      main { padding: 1.25rem; }
+      .row { grid-template-columns: minmax(0, 1fr); }
+      .right { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Alessandro Mordasiewicz</h1>
+
+      <p>U.S. Citizen</p>
+
+      <div class="contacts">
+        <span>312-608-0070</span>
+
+        <a href="mailto:amordasiewi1@gmail.com">
+          amordasiewi1@gmail.com
+        </a>
+
+        <a href="https://alessandromordasiewicz.com/">alessandromordasiewicz.com</a>
+        <a href="https://www.linkedin.com/in/alessandro-mordasiewicz/">linkedin.com/in/alessandro-mordasiewicz</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Education</h2>
+
+      <article>
+        <div class="row">
+          <h3>Purdue University</h3>
+          <span class="right">West Lafayette, IN</span>
+        </div>
+
+        <div class="degree">
+          <div class="row">
+            <span>M.S. Aeronautics and Astronautics</span>
+            <span class="right">January 2027 - Present</span>
+          </div>
+          <div class="row">
+            <span class="degree-details">
+              <em>Major Concentration:</em>
+              Astrodynamics
+ |               <em>Minor Concentration:</em>
+              Autonomy &amp; Control
+            </span>
+            <span class="right">GPA: 4.0/4.0</span>
+          </div>
+        </div>
+        <div class="degree">
+          <div class="row">
+            <span>B.S. Aeronautical and Astronautical Engineering</span>
+            <span class="right">August 2022 - May 2026</span>
+          </div>
+          <div class="row">
+            <span class="degree-details">
+              <em>Concentration:</em>
+              Astrodynamics
+ |               <em>Minor:</em>
+              Computer Science
+            </span>
+            <span class="right">GPA: 3.4/4.0</span>
+          </div>
+        </div>
+
+        <p>
+          <strong>Relevant coursework:</strong>
+          Orbit Mechanics, Space Traffic Management, Spacecraft Attitude Dynamics, Applied Control in Astronautics, Applied Stochastic Processes, Control System Analysis, Geometric Control Methods
+        </p>
+
+        <p><strong>Interests:</strong> Spacecraft &amp; launch vehicle GNC, astrodynamics, mission analysis/design, modeling &amp; simulation, software engineering</p>
+
+
+      </article>
+    </section>
+    <section>
+      <h2>Professional Experience</h2>
+
+      <article>
+        <div class="row">
+          <h3>GNC Intern, Mission Design</h3>
+          <span class="right">May 2026 - November 2026</span>
+        </div>
+        <div class="row">
+          <span><em>Relativity Space</em></span>
+          <span class="right"><em>Long Beach, CA</em></span>
+        </div>
+
+
+          <ul>
+            <li>Supported the Mission Design group in launch vehicle trajectory optimization productionization and day-of-launch tooling development for the Terran R medium-to-heavy-lift partially reusable launch vehicle.</li>
+            <li>Responsible for the creation of launch window generation and evaluation tooling (Python).</li>
+            <li>Enhanced robustness of second-stage guidance algorithm for inertial orbit targeting (Rust).</li>
+            <li>Conducted preliminary launch vehicle collision avoidance and payload separation analyses (Python).</li>
+            <li>Worked in conjunction with the Simulation team for several extensive 6DoF simulation improvements (C++/Python).</li>
+            <li>Extensively used Git (via GitLab) for version control.</li>
+          </ul>
+      </article>
+      <article>
+        <div class="row">
+          <h3>Flight Mechanics Intern</h3>
+          <span class="right">May 2025 - August 2025</span>
+        </div>
+        <div class="row">
+          <span><em>NASA - Marshall Space Flight Center</em></span>
+          <span class="right"><em>Huntsville, AL</em></span>
+        </div>
+
+
+          <ul>
+            <li>Supported the NASA HLS guidance, navigation, &amp; mission analysis group (EV42) under the ESSCA contract.</li>
+            <li>Developed Python/MATLAB tools to enhance lunar DEM fidelity for hazard injection and lander tip-over analysis.</li>
+            <li>Integrated enhanced lunar DEMs into a 6DoF landing dynamics simulation.</li>
+            <li>Verified and validated HLS landing dynamics simulations by reconstructing the Apollo 11 landing.</li>
+            <li>Developed a Python landing visualization tool, reducing generation time from 2 hours to 2-3 minutes.</li>
+            <li>Extensively used Git (via GitHub) for version control.</li>
+          </ul>
+      </article>
+      <article>
+        <div class="row">
+          <h3>Flight Dynamics Intern</h3>
+          <span class="right">May 2024 - August 2024</span>
+        </div>
+        <div class="row">
+          <span><em>Intelsat (now SES Satellites)</em></span>
+          <span class="right"><em>McLean, VA</em></span>
+        </div>
+
+
+          <ul>
+            <li>Supported daily Flight Dynamics operations of over 70 active GEO satellites.</li>
+            <li>Developed and maintained an interactive web application (Python, React) to analyze critical satellite parameters.</li>
+            <li>Developed Python scripts for data visualization in operational flight dynamics software migrating to Linux.</li>
+            <li>Evaluated a GPS-based position estimation method against existing state estimation systems for GEO satellites.</li>
+            <li>Gained experience with Git for version control, enabling efficient collaboration and code management.</li>
+          </ul>
+      </article>
+      <article>
+        <div class="row">
+          <h3>Aerospace Engineering Intern</h3>
+          <span class="right">May 2023 - August 2023</span>
+        </div>
+        <div class="row">
+          <span><em>Axiom Aerospace LLC</em></span>
+          <span class="right"><em>Chicago, IL</em></span>
+        </div>
+
+
+          <ul>
+            <li>Compiled FAA certification packages including comprehensive engineering reports, design drawings, and test &amp; computations for Parts Manufacturer Approval (PMA) on FAA Part 23, 25, 27, and 29 category aircraft.</li>
+            <li>Created and edited engineering drawings using SolidWorks and Adobe Acrobat for various aircraft parts.</li>
+          </ul>
+      </article>
+    </section>
+    <section>
+      <h2>Extracurriculars</h2>
+
+      <article>
+        <div class="row">
+          <h3>Undergraduate Teaching Assistant</h3>
+          <span class="right">August 2023 - May 2026</span>
+        </div>
+        <div class="row">
+          <span><em>Purdue University Department of Physics and Astronomy</em></span>
+          <span class="right"><em>West Lafayette, IN</em></span>
+        </div>
+
+
+          <ul>
+            <li>TA for PHYS 172: Modern Mechanics, the introductory physics course for first-year engineering students.</li>
+            <li>Facilitated lab sections of up to 54 students, assisting students in understanding basic physics concepts and programming in Python.</li>
+          </ul>
+      </article>
+    </section>
+    <section>
+      <h2>Publications</h2>
+
+      <article>
+        <p class="publication">
+R. M. Ali, A. C. Slagle, <strong>A. Mordasiewicz</strong>, J. Orphee, and P. J. McDonough, “Apollo 11 Lunar Module Touchdown Dynamics Reconstruction Verification and Validation for Human Landing Systems”, in <em>48th Annual AAS Guidance, Navigation and Control (GN&amp;C) Conference</em>, Breckenridge, CO, 2026, NASA Technical Reports Server, Doc. ID 20260000331 (<a href="https://ntrs.nasa.gov/citations/20260000331">https://ntrs.nasa.gov/citations/20260000331</a>).
+        </p>
+
+
+      </article>
+    </section>
+    <section>
+      <h2>Technical Skills</h2>
+
+      <article>
+        <p>
+          <strong>Programming:</strong>
+          Python, C/C++, Rust, Julia, MATLAB, Java, JavaScript, TypeScript (React), HTML/CSS, Bash, Git, R
+        </p>
+        <p>
+          <strong>Other:</strong>
+          Simulink, GMAT, FreeFlyer, STK, Azure DevOps, GitHub, GitLab, Microsoft Office, Jira, SolidWorks, Siemens NX
+        </p>
+
+
+      </article>
+    </section>
+  </main>
+</body>
+</html>
