@@ -7,6 +7,7 @@ from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 REPO = "amordasiewi1/resume"
 FILES = ("resume.html", "resume.pdf", "resume.json", "resume.yaml")
+OUTPUT_NAMES = {"resume.html": "index.html"}
 LIMIT = 10 * 1024 * 1024
 
 
@@ -57,13 +58,15 @@ def sync(destination):
         destination.mkdir(parents=True, exist_ok=True)
         for name in FILES:
             # Stage replacements on the same filesystem for atomic file replacement.
-            pending = destination / (name + ".tmp")
-            if pending.is_symlink() or (destination / name).is_symlink():
+            output_name = OUTPUT_NAMES.get(name, name)
+            pending = destination / (output_name + ".tmp")
+            if pending.is_symlink() or (destination / output_name).is_symlink():
                 raise ValueError("Refusing to overwrite a symbolic link")
         for name in FILES:
-            pending = destination / (name + ".tmp")
+            output_name = OUTPUT_NAMES.get(name, name)
+            pending = destination / (output_name + ".tmp")
             pending.write_bytes((staged / name).read_bytes())
-            pending.replace(destination / name)
+            pending.replace(destination / output_name)
     print(f"Synced four resume files from {REPO}@{commit}")
 
 
