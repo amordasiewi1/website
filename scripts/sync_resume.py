@@ -39,7 +39,6 @@ def validate(name, content):
         if not text.lstrip().lower().startswith("<!doctype html>"):
             raise ValueError("Expected a standalone HTML document")
     elif name.endswith(".yaml"):
-        # YAML is copied as text, never deserialized or executed.
         if "\x00" in text or not re.search(r"^name:", text, re.MULTILINE):
             raise ValueError("Expected UTF-8 resume YAML with a name field")
 
@@ -48,7 +47,6 @@ def sync(destination):
     commit = json.loads(fetch(f"https://api.github.com/repos/{REPO}/commits/main"))["sha"]
     if not isinstance(commit, str) or not re.fullmatch(r"[0-9a-f]{40}", commit):
         raise ValueError("Invalid GitHub commit ID")
-    # Download and validate the complete set before changing existing files.
     with TemporaryDirectory(prefix="resume-sync-") as temporary:
         staged = Path(temporary)
         for name in FILES:
@@ -57,7 +55,6 @@ def sync(destination):
             (staged / name).write_bytes(content)
         destination.mkdir(parents=True, exist_ok=True)
         for name in FILES:
-            # Stage replacements on the same filesystem for atomic file replacement.
             output_name = OUTPUT_NAMES.get(name, name)
             pending = destination / (output_name + ".tmp")
             if pending.is_symlink() or (destination / output_name).is_symlink():
